@@ -29,6 +29,7 @@ Name = "myigw"
 vpc_id = aws_vpc.tfvpc.id
 }
 resource "aws_eip" "tfeip"{
+domain = "vpc"
 tags = {
 Name = "Elastic_ip"
 }
