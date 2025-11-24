@@ -70,6 +70,7 @@ destination_cidr_block = "0.0.0.0/0"
 gateway_id = aws_internet_gateway.tfgateway.id
 }
 resource "aws_security_group" "tfsg"{
+vpc_id = aws_vpc.tfvpc.id
 tags = {
 Name = "mysecuritygroup"
 }
